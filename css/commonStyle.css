@@ -1,0 +1,128 @@
+/* ========================================
+u-
+======================================== */
+.u-lp-0 {
+  letter-spacing: 0 !important;
+}
+
+.u-flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.u-flexnowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.u-block {
+  display: block;
+}
+
+.u-inlineBlock {
+  display: inline-block;
+}
+
+.u-displayNone {
+  display: none;
+}
+
+.u-marginAuto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.u-marginTop-60 {
+  margin-top: 6rem;
+}
+
+.l-header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  background-color: #fff;
+}
+.l-header .c-brand {
+  height: 100%;
+  width: 50%;
+  font-size: 20px;
+}
+.l-header .c-nav {
+  height: 100%;
+  width: 50%;
+}
+.l-header .c-nav ul {
+  width: 100%;
+}
+.l-header .c-nav ul li {
+  width: 25%;
+}
+.l-header .c-nav ul li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  display: block;
+  margin-top: 40px;
+}
+
+.l-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 40px);
+}
+.l-section h1 {
+  font-size: 30px;
+}
+.l-section h2 {
+  font-size: 20px;
+}
+
+/* ========================================
+BASE
+======================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+p {
+  line-height: 1.6;
+  letter-spacing: 0.2em;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  transition: all 0.2s;
+}
+a:hover {
+  transition: 0.2s;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  transition: all 0.2s;
+}
+input[type=radio]:hover, input[type=radio]:checked,
+input[type=checkbox]:hover,
+input[type=checkbox]:checked {
+  transition: 0.2s;
+}
+
+html {
+  font-size: 62.5%;
+}

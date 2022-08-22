@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/////////////////////////////////////
+// MAIN
+/////////////////////////////////////
+main{
+	display: block;
+	margin-top: 40px;
+}
+
+.l-section{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	height: calc(100vh - 40px);
+	h1{
+		font-size: 30px;
+	}
+	h2{
+		font-size: 20px;
+	}
+}

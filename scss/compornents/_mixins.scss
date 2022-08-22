@@ -1,0 +1,46 @@
+// @charset "UTF-8";
+
+// /////////////////////////////////////
+// // VALUE SETTING
+// /////////////////////////////////////
+
+//Format Brake Point
+$bp-tablet : 1024px;
+$bp-sp : 750px;
+
+@mixin breakPoint($media-width) {
+	@if $media-width == sp {
+		@media only screen and (max-width: $bp-sp) {
+			@content;
+		}
+	}
+	@else if $media-width == tablet {
+		@media only screen and (max-width: $bp-tablet) {
+			@content;
+		}
+	}
+	@else if $media-width == main {
+		@media only screen and (max-width: $MAIN_WIDTH) {
+			@content;
+		}
+	}
+	@else if $media-width == onlypc {
+		@media only screen and (min-width: $bp-sp) {
+			@content;
+		}
+	}
+@else if $media-width == $media-width { //数値入力
+	@media only screen and (max-width: $media-width) {
+	@content;
+	}
+}
+}
+
+@mixin breakPoint-height($media-height) {
+	@if $media-height == $media-height { //数値入力
+	@media only screen and (max-height: $media-height) {
+	@content;
+	}
+}
+}
+

@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+///////////////////////////////////
+//COLOR
+///////////////////////////////////
+$COLOR_BLACK : #1F1F26;
+$COLOR_WHITE : #fff;
+
+$COLOR_GRAY_L : #C6C6C6;
+$COLOR_GRAY_D : #43434B;
+
+$COLOR_BG : $COLOR_WHITE;
+
+///////////////////////////////////
+// FONT
+///////////////////////////////////
+$FONT_JP : 'Noto Sans JP', sans-serif;
+
+$FONT_EN_1 : 'Bungee', cursive;
+
+$FONT_EN_2 : 'Jura', sans-serif;
+
+@mixin FONT($font: 'EN', $weight: 'default'){
+	@if $font == 'EN' {
+		font-family:$FONT_EN;
+		@if $weight == 'default'{
+			font-weight:400;
+		}
+		@else if $weight == "thin"{
+			font-weight:100;
+		}
+		@else if $weight == "exlight"{
+			font-weight:200;
+		}
+		@else if $weight == "light"{
+			font-weight:300;
+		}
+		@else if $weight == "regular"{
+			font-weight:400;
+		}
+		@else if $weight == "medium"{
+			font-weight:500;
+		}
+		@else if $weight == "semibold"{
+			font-weight:600;
+		}
+		@else if $weight == "bold"{
+			font-weight:700;
+		}
+		@else if $weight == "exbold"{
+			font-weight:800;
+		}
+		@else if $weight == "black"{
+			font-weight:900;
+		}
+	}
+	@else if $font == 'JP'{
+		font-family:$FONT_JP;
+		font-style: normal;
+		@if $weight == 'default'{
+			font-weight:400;
+		}
+		@else if $weight == "thin"{
+			font-weight:100;
+		}
+		@else if $weight == "light"{
+			font-weight:300;
+		}
+		@else if $weight == "regular"{
+			font-weight:400;
+		}
+		@else if $weight == "medium"{
+			font-weight:500;
+		}
+		@else if $weight == "bold"{
+			font-weight:700;
+		}
+		@else if $weight == "black"{
+			font-weight:900;
+		}
+	}
+	@else if $font == 'BOTH'{
+		font-family:$FONT_BOTH;
+		@if $weight == 'default'{
+			font-weight:400;
+		}
+		@else if $weight == "bold"{
+			font-weight:700;
+		}
+	}
+}
+
+/* ========================================
+u-
+======================================== */
+.u-lp-0{
+	letter-spacing: 0 !important;
+}
+.u-flexwrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+.u-flexnowrap{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.u-block{
+	display: block;
+}
+.u-inlineBlock{
+	display: inline-block;
+}
+.u-displayNone {
+	display: none;
+}
+.u-marginAuto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.u-marginTop-60{
+	margin-top: 6rem;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<!-- Style CSS -->
+		<link rel="stylesheet" type="text/css" href="./css/destyle.css">
+		<link rel="stylesheet" type="text/css" href="./css/commonStyle.css">
+
+		<!-- javascript -->
+		<script src="./like_button.js" crossorigin="anonymous"></script>
+
+		<title>既存HTMLにReactを入れてみる</title>
+	</head>
+	<body class="l-body">
+		<header class="l-header u-flexwrap">
+			<h2 class="c-brand">
+				<a href="#">Brand</a>
+			</h2>
+			<nav class="c-nav">
+				<ul class="u-flexwrap">
+					<li class="">
+						<a href="#">Concept</a>
+					</li>
+					<li>
+						<a href="#">Work</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="l-section">
+				<h1>CONCEPTの内容を記載する</h1>
+				<h2>Concept</h2>
+				<div id="like_button_container"></div>
+				<div></div>
+			</section>
+			<section class="l-section">
+				<h1>これまでの作品を掲載する</h1>
+				<h2>Work</h2>
+				<div></div>
+			</section>
+			<section class="l-section">
+				<h1>コンタクト</h1>
+				<h2>Contact</h2>
+				<div></div>
+			</section>
+		</main>
+		<footer>
+			
+		</footer>
+	<!-- Load React. -->
+	<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+	<!-- Load our React component. -->
+	<script src="like_button.js"></script>
+	</body>
+</html>
